@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = (leftColor, rightColor) => {
   const navStyles = {
     background: `linear-gradient(90deg, ${leftColor}, ${rightColor})`,
@@ -9,16 +11,16 @@ const Navbar = (leftColor, rightColor) => {
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="about">About</a>
+            <Link to="/about">About</Link>
           </li>
         </ul>
       </nav>
