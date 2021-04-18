@@ -1,3 +1,4 @@
+import { Route } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -9,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Projects />
-      <Contact />
-      <About />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/projects" component={Projects} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/about" component={About} />
     </div>
   );
 }
